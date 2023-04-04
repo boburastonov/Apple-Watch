@@ -1,3 +1,6 @@
+:root{
+    --accent-color: #333
+}
 html{
     height: 100%;
     box-sizing: border-box;
@@ -10,8 +13,278 @@ html{
 body{
     padding: 0;
     margin: 0;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-style: 15px;
+    font-size: 15px;
     line-height: 1.6;
+}
+.container{
+    width: 100%;
+    max-width: 1040px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.btn{
+    width: 260px;
+    color: #fff;
+    background-color: #ea625c;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    font-size: 18px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.site-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.logo-img{
+    width: 35px;
+    height: 41px;
+}
+.site-header-navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 6px 6.5px;
+    margin-right: 40px;
+}
+.list-items{
+    line-height: 1.6;
+}
+.list-items:not(:last-child){
+    margin-right: 30px;
+}
+.navbar-link{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.support-link{
+    display: flex;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 6px;
+}
+
+
+/* HERO */
+.hero-section{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 165px;
+    margin-right: 245px;
+}
+.hero-heading{
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.hero-info{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.vertical-divider{
+    width: 3px;
+    height: 120px;
+    background-color: #888;
+    margin-right: 40px;
+}
+.hero-text{
+    width: 450px;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.hero-btn{
+    padding-left: 39px;
+    padding-right: 39px;
+}
+
+
+/* FEATURES */
+.features{
+    width: 100%;
+    padding: 70px 125px;
+}
+.features-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.features-item{
+    display: flex;
+    flex-direction: column;
+}
+.features-item:not(:last-child){
+    margin-right: 80px;
+}
+.features-heading{
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.features-text{
+    width: 280px;
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.dots-divider{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.rectangle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: none;
+    background-color: #ddd;
+}
+.rectangle:not(:last-child){
+    margin-right: 10px;
+}
+.learn-more-btn{
+    display: flex;
+    align-items: center;
+    color: #ea625c;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn-divider{
+    width: 40px;
+    height: 3px;
+    background-color: #ea625c;
+    margin-right: 10px;
+}
+
+
+/* INTRO */
+.intro{
+    padding: 70px 125px;
+}
+.intro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 110px;
+}
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 107px;
+    margin-right: 110px;
+    margin-bottom: 107px;
+}
+.intro-heading {
+    color: #000;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.intro-info {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.intro-divider{
+    height: 96px;
+    color: #fff;
+}
+.intro-text {
+    width: 450px;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.intro-btn{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
+/* HEALTHCARE */
+.healthcare{
+    width: 100%;
+    height: 830px;
+    padding: 240px 125px 239px 635px;
+    background-image: url(../Images/runners\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+.healthcare-heading {
+    color: #fff;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.healthcare-info {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.healthcare-divider {
+    background-color: #fff;
+    height: 120px;
+}
+
+.healthcare-text {
+    width: 450px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.healthcare-btn {
+    margin-top: 0;
+    padding-left: 46px;
+    padding-right: 46px;
 }
